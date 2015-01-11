@@ -1,0 +1,25 @@
+.ko-kirako-wrapper
+{
+	overflow: auto;
+	height: 100%;
+	background: gray;
+}
+.ko-kirako
+{
+	overflow: hidden;
+	font-family: kirako;
+	font-size: 32px;
+	line-height: 1;
+	margin: 10px auto;
+	box-shadow: 0 3px 6px black;
+	white-space: pre;
+	cursor: pointer;
+	
+	> *
+	{
+		&.ko-selected
+		{
+			outline: 1px solid red;
+		}
+	}
+}

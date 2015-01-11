@@ -1,0 +1,28 @@
+.ko-brushes
+{
+	float: right;
+	height: 100%;
+	overflow-y: scroll;
+	font-family: kirako;
+	font-size: 32px;
+	line-height: 1;
+	border-left: 1px solid #666;
+	padding: 1px 0 0 1px;
+	background: #aaa;
+	
+	> *
+	{
+		display: inline-block;
+		vertical-align: top;
+		width: 34px;
+		height: 34px;
+		margin: 0 1px 1px 0;
+		border: 1px solid #666;
+		cursor: pointer;
+		
+		&.ko-selected
+		{
+			outline: 1px solid red;
+		}
+	}
+}
