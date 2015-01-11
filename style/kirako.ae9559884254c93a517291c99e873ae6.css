@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'kirako';
+  src: url('fonts/kirako-01-002-webfont.249930923782af4de2b475cb5a015d47.eot');
+  src: url('fonts/kirako-01-002-webfont.249930923782af4de2b475cb5a015d47.eot?#iefix') format('embedded-opentype'), url('fonts/kirako-01-002-webfont.eb1c6fbc6bf3d63cbe95686a54a24de7.woff2') format('woff2'), url('fonts/kirako-01-002-webfont.973381e962422b0355d3defecf340e65.woff') format('woff');
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  font: 14px/20px sans-serif;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ko-brushes {
+  float: right;
+  height: 100%;
+  overflow-y: scroll;
+  font-family: kirako;
+  font-size: 32px;
+  line-height: 1;
+  border-left: 1px solid #666;
+  padding: 1px 0 0 1px;
+  background: #aaa;
+}
+.ko-brushes > * {
+  display: inline-block;
+  vertical-align: top;
+  width: 34px;
+  height: 34px;
+  margin: 0 1px 1px 0;
+  border: 1px solid #666;
+  cursor: pointer;
+}
+.ko-brushes > *.ko-selected {
+  outline: 1px solid red;
+}
+.ko-kirako-wrapper {
+  overflow: auto;
+  height: 100%;
+  background: gray;
+}
+.ko-kirako {
+  overflow: hidden;
+  font-family: kirako;
+  font-size: 32px;
+  line-height: 1;
+  margin: 10px auto;
+  box-shadow: 0 3px 6px black;
+  white-space: pre;
+  cursor: pointer;
+}
+.ko-kirako > *.ko-selected {
+  outline: 1px solid red;
+}
+.ko-palette {
+  float: right;
+  height: 100%;
+  overflow-y: scroll;
+  border-left: 1px solid #666;
+  padding: 1px 0 0 1px;
+  background: #aaa;
+}
+.ko-palette > * {
+  display: inline-block;
+  vertical-align: top;
+  width: 34px;
+  height: 34px;
+  margin: 0 1px 1px 0;
+  border: 1px solid #666;
+  cursor: pointer;
+}
